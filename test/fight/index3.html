@@ -1,0 +1,65 @@
+<head>
+    <title>연습 페이지 - 1vs1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./index3.css">
+</head>
+<body>
+    <div style="position : relative; display: inline-block;">
+        <div style="
+            position : absolute; 
+            display: flex; 
+            width: 100%; 
+            align-items: center;
+            padding: 20px;
+            ">
+            <!--player hp-->
+            <div style="
+                position : relative; 
+                width: 100%; 
+                display: flex; 
+                justify-content: flex-end;
+                border-top: 4px solid white;
+                border-left: 4px solid white;
+                border-bottom: 4px solid white;
+                ">
+                <div style="background-color: red; height: 30px; width: 100%;"></div>
+                <div id="playerHP"></div>
+            </div>            
+            <!--timer-->
+            <div id="timer">10</div>
+            <!--enemy hp-->
+            <div style="
+                position : relative; 
+                width: 100%;
+                border-top: 4px solid white;
+                border-right: 4px solid white;
+                border-bottom: 4px solid white;
+                "> 
+                <div style="background-color: red; height: 30px;"></div>
+                <div id="enemyHP"></div>                
+            </div> 
+            <div></div> 
+        </div>
+        <div id="displayText" style="
+            position: absolute;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;            
+            display: none;
+        ">Draw Game</div>               
+        <canvas></canvas>        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" 
+        integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/classes.js"></script>
+    <script src="./index3.js"></script>
+</body>

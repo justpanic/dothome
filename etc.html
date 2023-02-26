@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>etc - MainMenu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> --> 
+    <style>
+        button{
+            border: 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover{
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div style="
+        position: absolute;
+        width: 640px;
+        height: 480px;
+        background-color: white;
+        border: 4px solid black;
+        display: flex;
+    ">   
+    <div style="               
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        ">
+        <button value="1">TEST1 : pokemon</button>
+        <button value="2">TEST2 : 1vs1</button>
+        <button value="3">TEST3 : tower</button>
+        <button value="4">To Main</button>
+    </div>   
+    </div>
+<script>
+document.querySelectorAll('button').forEach((button) => {
+    button.addEventListener('click', ()=>{
+        var value = button.value;
+        if(value==="1"){ location.href="./test/map/index2.html";}
+        else if (value==="2") { location.href="./test/fight/index3.html"; }   
+        else if (value==="3") { location.href="./test/tower/index4.html"; }     
+        else if (value==="4") { location.href="./index.html"; }     
+    })
+})
+</script> 
+</body>
+</html>
